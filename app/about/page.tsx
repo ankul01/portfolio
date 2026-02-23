@@ -4,35 +4,32 @@ import Link from 'next/link';
 export default function AboutPage() {
   return (
     <Layout>
-      <h1>About Me</h1>
+      <h1>Welcome!</h1>
       
-      <p className="text-lg">
-        I architect distributed systems that handle <strong>30K+ requests per minute</strong> and 
-        build the engineering organizations that sustain them.
+      <p>
+        I&apos;m Ankul. I&apos;ve spent the last 14+ years building products, platforms, and engineering 
+        teams — first as an individual contributor, then as a technical lead, and now as an 
+        engineering leader responsible for organizations of 15+ engineers.
       </p>
       
       <p>
-        With 14+ years shipping production systems in fintech, insurance, and e-commerce, 
-        I operate at the intersection of <strong>deep technical work and organizational leadership</strong> — 
-        designing low-latency, high-throughput platforms while scaling teams that deliver predictably 
-        under regulatory and correctness constraints.
+        This site is a collection of my thinking on leadership, system design, and the craft of 
+        building software at scale. Hopefully it&apos;s useful to you wherever you are on your own journey.
       </p>
 
       <section id="background">
         <h2>Background</h2>
         
         <p>
-          My career has followed a deliberate path from hands-on systems engineering to technical leadership. 
-          I started building scalable B2B platforms and data pipelines, progressed through payments and 
-          checkout systems at scale, and now lead platform organizations in regulated industries.
-        </p>
-        
-        <p>
-          I hold an <strong>MCA from NIT Tiruchirappalli</strong> (2008–2011), where I developed a strong 
-          foundation in systems thinking that continues to inform how I approach architecture and team design.
+          I studied Computer Applications at <strong>NIT Tiruchirappalli</strong>, graduating in 2011. 
+          The systems courses stuck with me — that foundation in distributed systems and architecture 
+          continues to shape how I think about building software today.
         </p>
 
         <h3>Get in Touch</h3>
+        <p>
+          I&apos;m always happy to connect with fellow engineering leaders and practitioners.
+        </p>
         <ul>
           <li>
             <Link href="https://www.linkedin.com/in/ankul-choudhry" target="_blank" rel="noopener noreferrer">
@@ -53,106 +50,131 @@ export default function AboutPage() {
       <section id="experience">
         <h2>Experience</h2>
 
-        <h3>Currently</h3>
+        <h3>Acko General Insurance</h3>
         <p>
-          <strong>Senior Engineering Manager at Acko General Insurance</strong> (Oct 2025 – Present)
+          For the past few years, I&apos;ve been building embedded insurance platforms at{' '}
+          <Link href="https://acko.com" target="_blank" rel="noopener noreferrer">Acko</Link>. 
+          It&apos;s been some of the most challenging and rewarding work of my career.
         </p>
         <p>
-          Leading a multi-layered engineering organization of <strong>15+ engineers</strong>, 
-          including senior engineers and team leads. I own platforms across embedded insurance, 
-          lending, and partner integrations — mission-critical systems operating under strict 
-          regulatory constraints.
+          Today, as <strong>Senior Engineering Manager</strong>, I lead a multi-layered organization 
+          of 15+ engineers across embedded insurance, lending, and partner integrations. We own 
+          mission-critical platforms handling 30K+ requests per minute under strict regulatory constraints — 
+          the kind of systems where correctness isn&apos;t optional.
         </p>
-        <p>Key focus areas:</p>
-        <ul>
-          <li>End-to-end ownership of <strong>Java/Spring Boot microservices handling 30K+ RPM</strong></li>
-          <li>Architecture reviews and design decisions for high-throughput transactional systems</li>
-          <li>ML-based fraud detection improving accuracy by <strong>~40%</strong></li>
-          <li>AI-assisted development workflows reducing cycle time by <strong>~25%</strong></li>
-        </ul>
-
-        <h3>Previously</h3>
-
-        <h4>Engineering Manager — Acko General Insurance</h4>
-        <p><em>Dec 2022 – Sep 2025 | Bangalore</em></p>
         <p>
-          Scaled embedded insurance platforms and led zero-downtime migrations of high-throughput systems.
+          Some highlights from my time here:
         </p>
         <ul>
-          <li>Scaled platforms to <strong>30K+ RPM</strong> with improved reliability and observability</li>
-          <li><strong>Zero-downtime migration</strong> of issuance and claims systems (peaks ~2,000 policies/min) — 
-              improved uptime by ~25%, scalability by ~30%</li>
-          <li>Built multi-brand dealer POS platform: <strong>500+ dealers</strong>, <strong>~₹100 Cr annualized throughput</strong></li>
-          <li>Designed reusable integration platform — reduced integration timelines by <strong>~50%</strong></li>
-          <li>Self-service onboarding frameworks cutting partner setup from ~1 week to <strong>~2 hours</strong></li>
-          <li>Established regulated <strong>Life Insurance LOB from scratch</strong></li>
+          <li>
+            Led a <strong>zero-downtime migration</strong> of our high-throughput issuance and claims 
+            systems (peaks around 2,000 policies/min) to a unified core platform. We improved uptime 
+            by ~25% and scalability by ~30%.
+          </li>
+          <li>
+            Built a multi-brand dealer POS platform with real-time settlement. We onboarded 500+ dealers 
+            and enabled ~₹100 Cr in annualized throughput.
+          </li>
+          <li>
+            Designed a reusable integration framework that cut partner onboarding from about a week 
+            to a couple of hours.
+          </li>
+          <li>
+            Established a new Life Insurance line of business from scratch and delivered an 
+            industry-first hybrid insurance product.
+          </li>
+          <li>
+            Introduced ML-based fraud detection that improved accuracy by ~40% while reducing 
+            manual reviews.
+          </li>
         </ul>
-
-        <h4>Engineering Manager / Lead Software Engineer — Snapdeal</h4>
-        <p><em>Jan 2018 – Nov 2022 | Gurgaon</em></p>
         <p>
-          Led checkout, payments, and order management platforms in high-traffic e-commerce.
+          I&apos;ve remained hands-on throughout — participating in architecture reviews, contributing 
+          to critical backend components, and staying close to the technical decisions that matter. 
+          I believe the best engineering leaders don&apos;t lose touch with the work.
+        </p>
+
+        <h3>Snapdeal</h3>
+        <p>
+          I spent four years at{' '}
+          <Link href="https://snapdeal.com" target="_blank" rel="noopener noreferrer">Snapdeal</Link>{' '}
+          leading checkout, payments, and order management — platforms handling 25K+ RPM during 
+          high-traffic e-commerce events.
+        </p>
+        <p>
+          This was where I learned to think about scale, reliability, and the operational reality 
+          of systems that can&apos;t go down. Some of the work I&apos;m proudest of:
         </p>
         <ul>
-          <li><strong>Checkout and payments platforms</strong> handling 25K+ RPM</li>
-          <li>Designed and delivered <strong>closed-wallet system</strong> for instant payments/refunds with UPI integration</li>
-          <li>Built real-time <strong>refund and reconciliation systems</strong> improving financial accuracy</li>
-          <li>Implemented secure payment gateway key management for compliance</li>
+          <li>
+            Designed and shipped a <strong>closed-wallet system</strong> for instant payments and 
+            refunds, integrating UPI and external wallet providers.
+          </li>
+          <li>
+            Built real-time refund and reconciliation systems that significantly improved 
+            settlement accuracy.
+          </li>
+          <li>
+            Implemented secure payment gateway key management — the kind of foundational work 
+            that isn&apos;t glamorous but matters enormously.
+          </li>
         </ul>
 
-        <h4>Software Developer → Technical Lead — Nagarro</h4>
-        <p><em>Aug 2011 – Dec 2017 | Gurgaon</em></p>
+        <h3>Early Career</h3>
         <p>
-          Progressed from individual contributor to technical leadership over 6 years.
+          I started my career at <strong>Nagarro</strong>, where I spent six years progressing from 
+          software developer to technical lead. I built B2B e-commerce platforms, booking systems, 
+          and data pipelines across healthcare, gaming, and enterprise domains.
         </p>
-        <ul>
-          <li>Built scalable B2B platforms across healthcare, gaming, and enterprise domains</li>
-          <li>Owned key system components and mentored engineers</li>
-          <li>Translated business requirements into scalable technical designs</li>
-        </ul>
+        <p>
+          Those years taught me the fundamentals: how to translate business requirements into 
+          technical designs, how to mentor engineers, and how to own key system components end-to-end. 
+          The progression from IC to technical leadership set the foundation for everything that followed.
+        </p>
       </section>
 
       <section id="philosophy">
         <h2>Philosophy</h2>
         
         <p>
-          I believe the best engineering leaders remain <strong>technically sharp</strong> while 
-          building organizations that don&apos;t depend on them. My approach combines hands-on involvement 
-          in architecture and design with systems thinking about team structure and delivery processes.
+          Over the years, I&apos;ve developed a few convictions about how to build great engineering 
+          organizations:
         </p>
 
-        <h3>How I Lead</h3>
-        <ul>
-          <li><strong>Hands-on by default</strong> — I stay close to architecture reviews, critical 
-              backend components, and design decisions</li>
-          <li><strong>Predictable delivery</strong> — I build processes that ship reliably, 
-              not heroically</li>
-          <li><strong>Technical depth enables leadership</strong> — understanding systems deeply 
-              allows me to make better organizational decisions</li>
-          <li><strong>Teams over individuals</strong> — sustainable high performance comes from 
-              team design, not individual output</li>
-        </ul>
-
-        <h3>Technical Expertise</h3>
         <p>
-          <strong>Systems:</strong> Java, Spring Boot, Microservices, Kafka, MySQL, RESTful APIs
-        </p>
-        <p>
-          <strong>Infrastructure:</strong> AWS (EC2, S3, Lambda, RDS), distributed systems, 
-          high-throughput transactional platforms
-        </p>
-        <p>
-          <strong>Emerging:</strong> AI-assisted development workflows, ML-based fraud detection, 
-          document intelligence
+          <strong>Stay technical.</strong> The best engineering leaders I&apos;ve worked with never 
+          fully step away from the code and architecture. I participate in design reviews, 
+          contribute to critical components, and make sure I understand our systems deeply enough 
+          to make good organizational decisions.
         </p>
 
-        <h3>Leadership</h3>
         <p>
-          <strong>Organization:</strong> Scaled teams to 15+ engineers, org design, hiring and coaching
+          <strong>Build for predictability.</strong> Heroic efforts are a sign of broken systems. 
+          I focus on building teams and processes that deliver reliably, sprint after sprint, 
+          without burning people out.
+        </p>
+
+        <p>
+          <strong>Invest in the craft.</strong> I&apos;ve been exploring AI-assisted development 
+          workflows, and we&apos;ve seen ~25% reduction in development cycle time. The tools are 
+          changing fast, and staying curious about them matters.
+        </p>
+
+        <p>
+          <strong>Teams compound.</strong> Individual heroics don&apos;t scale. I spend a lot of time 
+          thinking about team design, hiring, and creating environments where engineers can do 
+          their best work. Sustainable high performance comes from the team, not from any one person.
+        </p>
+
+        <h3>Technical Background</h3>
+        <p>
+          Most of my hands-on work has been in <strong>Java and Spring Boot</strong>, building 
+          microservices on AWS. I&apos;ve spent a lot of time with Kafka, MySQL, and the operational 
+          reality of keeping distributed systems running at scale.
         </p>
         <p>
-          <strong>Execution:</strong> Engineering strategy, delivery predictability, Agile/Scrum, 
-          stakeholder communication
+          More recently, I&apos;ve been working with ML-based fraud detection systems and exploring 
+          how AI can improve engineering workflows — both interesting frontiers.
         </p>
       </section>
     </Layout>
