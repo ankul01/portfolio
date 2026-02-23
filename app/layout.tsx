@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leadership Portfolio",
-  description: "Personal portfolio showcasing leadership principles and system design expertise",
+  title: "Ankul Choudhary — Engineering Leader",
+  description: "Engineering Leader | Platforms, Distributed Systems & Partner Integrations | Embedded Insurance | Ex-Snapdeal | NIT Trichy",
 };
 
 export default function RootLayout({
