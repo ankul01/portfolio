@@ -12,6 +12,7 @@ export const headerNavItems: HeaderNavItem[] = [
   { title: 'About Me', href: '/about' },
   { title: 'Leadership Principles', href: '/leadership-principles' },
   { title: 'System Designs', href: '/system-designs' },
+  { title: 'Case Studies', href: '/case-studies' },
 ];
 
 export const sidebarConfig: Record<string, NavItem[]> = {
@@ -33,6 +34,9 @@ export const sidebarConfig: Record<string, NavItem[]> = {
     { title: 'Scalability', href: '#scalability' },
     { title: 'Reliability', href: '#reliability' },
     { title: 'Architecture Patterns', href: '#architecture-patterns' },
-    { title: 'Case Studies', href: '#case-studies' },
+  ],
+  '/case-studies': [
+    { title: 'Embedded Insurance Platform', href: '#embedded-insurance' },
+    { title: 'Payments & Checkout', href: '#payments-checkout' },
   ],
 };
