@@ -18,7 +18,7 @@ export default function Header() {
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center">
           <Link href="/about" className="text-xl font-semibold text-gray-900">
-            Ankul Choudhary
+            Ankul Choudhry
           </Link>
         </div>
 

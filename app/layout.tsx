@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ankul Choudhary — Engineering Leader",
+  title: "Ankul Choudhry — Engineering Leader",
   description: "Engineering Leader | Platforms, Distributed Systems & Partner Integrations | Embedded Insurance | Ex-Snapdeal | NIT Trichy",
 };
 
