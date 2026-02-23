@@ -29,7 +29,7 @@ export const sidebarConfig: Record<string, NavItem[]> = {
     { title: 'Execution Under Uncertainty', href: '#execution' },
   ],
   '/system-designs': [
-    { title: 'Fundamentals', href: '#fundamentals' },
+    { title: 'Core Concepts', href: '#core-concepts' },
     { title: 'Scalability', href: '#scalability' },
     { title: 'Reliability', href: '#reliability' },
     { title: 'Architecture Patterns', href: '#architecture-patterns' },
