@@ -39,11 +39,6 @@ export default function AboutPage() {
           <li>
             <Link href="mailto:ankulnitt@gmail.com">ankulnitt@gmail.com</Link>
           </li>
-          <li>
-            <Link href="https://github.com/ankul01" target="_blank" rel="noopener noreferrer">
-              GitHub
-            </Link>
-          </li>
         </ul>
       </section>
 
