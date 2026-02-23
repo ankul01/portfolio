@@ -5,42 +5,46 @@ export default function AboutPage() {
   return (
     <Layout>
       <h1>About Me</h1>
-      <p>
-        Engineering leader with <strong>14+ years of experience</strong> building and scaling 
-        low-latency, high-throughput platforms in fintech, insurance, and e-commerce. I lead 
-        organizations of 15+ engineers, owning mission-critical backend systems end-to-end — 
-        from architecture and design through production operations.
+      
+      <p className="text-lg">
+        I architect distributed systems that handle <strong>30K+ requests per minute</strong> and 
+        build the engineering organizations that sustain them.
       </p>
+      
       <p>
-        My work sits at the intersection of <strong>engineering depth and organizational leadership</strong> — 
-        architecting systems that handle 25K–30K+ RPM under strict correctness and regulatory constraints, 
-        while building teams and processes that deliver predictably in fast-moving environments.
+        With 14+ years shipping production systems in fintech, insurance, and e-commerce, 
+        I operate at the intersection of <strong>deep technical work and organizational leadership</strong> — 
+        designing low-latency, high-throughput platforms while scaling teams that deliver predictably 
+        under regulatory and correctness constraints.
       </p>
 
       <section id="background">
         <h2>Background</h2>
-        <h3>Education</h3>
+        
         <p>
-          <strong>Master of Computer Applications (MCA)</strong><br />
-          National Institute of Technology, Tiruchirappalli | 2008 – 2011
+          My career has followed a deliberate path from hands-on systems engineering to technical leadership. 
+          I started building scalable B2B platforms and data pipelines, progressed through payments and 
+          checkout systems at scale, and now lead platform organizations in regulated industries.
         </p>
         
+        <p>
+          I hold an <strong>MCA from NIT Tiruchirappalli</strong> (2008–2011), where I developed a strong 
+          foundation in systems thinking that continues to inform how I approach architecture and team design.
+        </p>
+
         <h3>Get in Touch</h3>
         <ul>
           <li>
-            <strong>LinkedIn:</strong>{' '}
             <Link href="https://www.linkedin.com/in/ankul-choudhry" target="_blank" rel="noopener noreferrer">
-              linkedin.com/in/ankul-choudhry
+              LinkedIn
             </Link>
           </li>
           <li>
-            <strong>Email:</strong>{' '}
             <Link href="mailto:ankulnitt@gmail.com">ankulnitt@gmail.com</Link>
           </li>
           <li>
-            <strong>GitHub:</strong>{' '}
             <Link href="https://github.com/ankul01" target="_blank" rel="noopener noreferrer">
-              github.com/ankul01
+              GitHub
             </Link>
           </li>
         </ul>
@@ -48,81 +52,108 @@ export default function AboutPage() {
 
       <section id="experience">
         <h2>Experience</h2>
-        
-        <h3>Senior Engineering Manager — Acko General Insurance</h3>
-        <p><em>Oct 2025 – Present | Bangalore</em></p>
+
+        <h3>Currently</h3>
+        <p>
+          <strong>Senior Engineering Manager at Acko General Insurance</strong> (Oct 2025 – Present)
+        </p>
+        <p>
+          Leading a multi-layered engineering organization of <strong>15+ engineers</strong>, 
+          including senior engineers and team leads. I own platforms across embedded insurance, 
+          lending, and partner integrations — mission-critical systems operating under strict 
+          regulatory constraints.
+        </p>
+        <p>Key focus areas:</p>
         <ul>
-          <li>Lead and grow a multi-layered engineering organization of <strong>15+ engineers</strong>, including senior engineers and team leads, owning platforms across embedded insurance, lending, and partner integrations</li>
-          <li>Own end-to-end lifecycle of highly scalable <strong>Java/Spring Boot microservices handling 30K+ RPM</strong> under strict regulatory and correctness constraints</li>
-          <li>Architect and scale core platforms to reduce technical debt, improve performance, and support rapid onboarding of new business use cases without service disruption</li>
-          <li>Lead by example through hands-on involvement in <strong>architecture reviews, critical backend components, and design decisions</strong> for high-throughput transactional systems</li>
-          <li>Partner closely with Product, Business, and Compliance teams to translate complex requirements into reliable, production-grade systems delivered on predictable timelines</li>
-          <li>Strengthen claims risk controls via <strong>ML-based fraud detection</strong>, improving detection accuracy by ~40% while reducing manual claim reviews</li>
-          <li>Drive adoption of <strong>AI-assisted development workflows</strong>, reducing development cycle time by ~25% and improving sprint predictability</li>
+          <li>End-to-end ownership of <strong>Java/Spring Boot microservices handling 30K+ RPM</strong></li>
+          <li>Architecture reviews and design decisions for high-throughput transactional systems</li>
+          <li>ML-based fraud detection improving accuracy by <strong>~40%</strong></li>
+          <li>AI-assisted development workflows reducing cycle time by <strong>~25%</strong></li>
         </ul>
 
-        <h3>Engineering Manager — Acko General Insurance</h3>
+        <h3>Previously</h3>
+
+        <h4>Engineering Manager — Acko General Insurance</h4>
         <p><em>Dec 2022 – Sep 2025 | Bangalore</em></p>
+        <p>
+          Scaled embedded insurance platforms and led zero-downtime migrations of high-throughput systems.
+        </p>
         <ul>
-          <li>Scaled embedded insurance platforms to <strong>30K+ RPM</strong>, improving reliability, observability, and operational resilience</li>
-          <li>Led <strong>zero-downtime migration</strong> of high-throughput issuance and claims systems (peaks ~2,000 policies/min) to a unified core platform — improving uptime by ~25% and scalability by ~30%</li>
-          <li>Built a multi-brand dealer POS platform with real-time settlement, tax validation, and async reporting; onboarded <strong>500+ dealers</strong> and enabled ~₹100 Cr annualized throughput</li>
-          <li>Designed a reusable, standardized integration platform across multiple lines of business — reduced integration timelines by ~50% and improved engineering efficiency by ~40%</li>
-          <li>Built <strong>self-service onboarding frameworks</strong>, cutting partner setup time from ~1 week to ~2 hours</li>
-          <li>Established a new regulated <strong>Life Insurance LOB from scratch</strong> and delivered an industry-first hybrid insurance product</li>
-          <li>Remained hands-on with critical backend components, design reviews, and architecture decisions</li>
+          <li>Scaled platforms to <strong>30K+ RPM</strong> with improved reliability and observability</li>
+          <li><strong>Zero-downtime migration</strong> of issuance and claims systems (peaks ~2,000 policies/min) — 
+              improved uptime by ~25%, scalability by ~30%</li>
+          <li>Built multi-brand dealer POS platform: <strong>500+ dealers</strong>, <strong>~₹100 Cr annualized throughput</strong></li>
+          <li>Designed reusable integration platform — reduced integration timelines by <strong>~50%</strong></li>
+          <li>Self-service onboarding frameworks cutting partner setup from ~1 week to <strong>~2 hours</strong></li>
+          <li>Established regulated <strong>Life Insurance LOB from scratch</strong></li>
         </ul>
 
-        <h3>Engineering Manager / Lead Software Engineer — Snapdeal</h3>
+        <h4>Engineering Manager / Lead Software Engineer — Snapdeal</h4>
         <p><em>Jan 2018 – Nov 2022 | Gurgaon</em></p>
+        <p>
+          Led checkout, payments, and order management platforms in high-traffic e-commerce.
+        </p>
         <ul>
-          <li>Led <strong>checkout, payments, and order management platforms</strong> handling 25K+ RPM in high-traffic e-commerce environments</li>
-          <li>Influenced product and system design for payments and post-order flows in collaboration with Product and Finance teams</li>
-          <li>Designed and delivered a <strong>closed-wallet system</strong> for instant payments and refunds, integrating UPI and external wallet providers</li>
-          <li>Built real-time <strong>refund and reconciliation systems</strong>, reducing settlement delays and improving financial accuracy</li>
-          <li>Implemented secure payment gateway key management, strengthening compliance and security posture</li>
+          <li><strong>Checkout and payments platforms</strong> handling 25K+ RPM</li>
+          <li>Designed and delivered <strong>closed-wallet system</strong> for instant payments/refunds with UPI integration</li>
+          <li>Built real-time <strong>refund and reconciliation systems</strong> improving financial accuracy</li>
+          <li>Implemented secure payment gateway key management for compliance</li>
         </ul>
 
-        <h3>Software Developer → Senior Developer → Technical Lead — Nagarro</h3>
+        <h4>Software Developer → Technical Lead — Nagarro</h4>
         <p><em>Aug 2011 – Dec 2017 | Gurgaon</em></p>
+        <p>
+          Progressed from individual contributor to technical leadership over 6 years.
+        </p>
         <ul>
-          <li>Built scalable B2B e-commerce platforms, booking systems, and data pipelines across healthcare, gaming, and enterprise domains</li>
-          <li>Partnered with stakeholders to translate business requirements into scalable technical designs</li>
-          <li>Progressed from individual contributor to technical leadership, mentoring engineers and owning key system components</li>
+          <li>Built scalable B2B platforms across healthcare, gaming, and enterprise domains</li>
+          <li>Owned key system components and mentored engineers</li>
+          <li>Translated business requirements into scalable technical designs</li>
         </ul>
       </section>
 
       <section id="philosophy">
         <h2>Philosophy</h2>
+        
         <p>
-          I believe in building systems and teams that are sustainable, scalable, and focused on delivering value. 
-          My approach combines deep technical expertise with organizational leadership to create predictable, 
-          high-performing engineering teams.
+          I believe the best engineering leaders remain <strong>technically sharp</strong> while 
+          building organizations that don&apos;t depend on them. My approach combines hands-on involvement 
+          in architecture and design with systems thinking about team structure and delivery processes.
         </p>
 
-        <h3>Skills &amp; Expertise</h3>
-        
-        <h4>Leadership</h4>
+        <h3>How I Lead</h3>
         <ul>
-          <li>Org design and team scaling (15+ engineers)</li>
-          <li>Engineering strategy and execution</li>
-          <li>Delivery predictability and Agile/Scrum</li>
-          <li>Hiring, coaching, and stakeholder communication</li>
+          <li><strong>Hands-on by default</strong> — I stay close to architecture reviews, critical 
+              backend components, and design decisions</li>
+          <li><strong>Predictable delivery</strong> — I build processes that ship reliably, 
+              not heroically</li>
+          <li><strong>Technical depth enables leadership</strong> — understanding systems deeply 
+              allows me to make better organizational decisions</li>
+          <li><strong>Teams over individuals</strong> — sustainable high performance comes from 
+              team design, not individual output</li>
         </ul>
 
-        <h4>Technical</h4>
-        <ul>
-          <li>Java, Spring Boot, AWS (EC2, S3, Lambda, RDS)</li>
-          <li>Microservices, RESTful APIs, Kafka, MySQL</li>
-          <li>Distributed systems, high-throughput transactional platforms</li>
-        </ul>
+        <h3>Technical Expertise</h3>
+        <p>
+          <strong>Systems:</strong> Java, Spring Boot, Microservices, Kafka, MySQL, RESTful APIs
+        </p>
+        <p>
+          <strong>Infrastructure:</strong> AWS (EC2, S3, Lambda, RDS), distributed systems, 
+          high-throughput transactional platforms
+        </p>
+        <p>
+          <strong>Emerging:</strong> AI-assisted development workflows, ML-based fraud detection, 
+          document intelligence
+        </p>
 
-        <h4>AI &amp; Automation</h4>
-        <ul>
-          <li>AI-assisted development workflows</li>
-          <li>Document intelligence and operational automation</li>
-          <li>ML-based fraud detection and risk controls</li>
-        </ul>
+        <h3>Leadership</h3>
+        <p>
+          <strong>Organization:</strong> Scaled teams to 15+ engineers, org design, hiring and coaching
+        </p>
+        <p>
+          <strong>Execution:</strong> Engineering strategy, delivery predictability, Agile/Scrum, 
+          stakeholder communication
+        </p>
       </section>
     </Layout>
   );
