@@ -21,11 +21,12 @@ export const sidebarConfig: Record<string, NavItem[]> = {
     { title: 'Philosophy', href: '#philosophy' },
   ],
   '/leadership-principles': [
-    { title: 'Building a Team from Scratch', href: '#building-team' },
-    { title: 'Prioritization Frameworks', href: '#prioritization' },
-    { title: 'Cross-team Alignment', href: '#cross-team-alignment' },
-    { title: 'Decision-Making', href: '#decision-making' },
-    { title: 'Communication', href: '#communication' },
+    { title: 'Philosophy', href: '#philosophy' },
+    { title: 'Building Teams That Scale', href: '#building-teams' },
+    { title: 'Multiplying vs Bottlenecking', href: '#multiplying' },
+    { title: 'Decision-Making at Speed', href: '#decision-making' },
+    { title: 'Alignment Without Bureaucracy', href: '#alignment' },
+    { title: 'Execution Under Uncertainty', href: '#execution' },
   ],
   '/system-designs': [
     { title: 'Fundamentals', href: '#fundamentals' },
