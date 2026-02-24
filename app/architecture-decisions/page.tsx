@@ -19,7 +19,7 @@ export default function ArchitectureDecisionsPage() {
       <section id="embedded-insurance">
         <h2>Embedded Insurance Platform</h2>
         <p className="text-gray-600 italic">
-          A production architecture handling 30K+ RPM with strict regulatory and financial correctness requirements.
+          A production architecture handling high-throughput traffic with strict regulatory and financial correctness requirements.
         </p>
 
         <h3>The Context</h3>
@@ -30,10 +30,10 @@ export default function ArchitectureDecisionsPage() {
           fintech, and NBFC platforms.
         </p>
         <p>
-          Building the platform that powers this at Acko meant solving a fundamentally different problem than 
-          traditional insurance. We needed a <strong>configurable product engine, a reliable issuance pipeline, 
-          a financially correct ledger, and a compliant reporting backbone</strong> — all without rewriting the 
-          core for each new partner or line of business.
+          Building this platform meant solving a fundamentally different problem than traditional insurance. 
+          We needed a <strong>configurable product engine, a reliable issuance pipeline, a financially correct 
+          ledger, and a compliant reporting backbone</strong> — all without rewriting the core for each new 
+          partner or line of business.
         </p>
 
         <h3>Architecture Overview</h3>
@@ -79,8 +79,7 @@ export default function ArchitectureDecisionsPage() {
         <h4>Decision 1: Immutable Product Versioning</h4>
         <p>
           <strong>The problem:</strong> Early on, we allowed in-place plan edits. A pricing change propagated 
-          to active policies in production — incorrect premiums, regulatory exposure, and a very long weekend 
-          of cleanup.
+          to active policies in production — incorrect premiums, regulatory exposure, and significant cleanup effort.
         </p>
         <p>
           <strong>The decision:</strong> Plans are immutable once published. New version, soft-deprecate the 
@@ -89,7 +88,7 @@ export default function ArchitectureDecisionsPage() {
         </p>
         <p>
           <strong>The tradeoff:</strong> More storage, more version management complexity. But we never had 
-          that phone call again. In a regulated industry, <strong>immutability is cheaper than incorrectness.</strong>
+          that issue again. In a regulated industry, <strong>immutability is cheaper than incorrectness.</strong>
         </p>
 
         <h4>Decision 2: Grid-Based Pricing Over Runtime Actuarial Models</h4>
@@ -100,20 +99,20 @@ export default function ArchitectureDecisionsPage() {
         </p>
         <p>
           <strong>The decision:</strong> Pre-computed pricing grids versioned and preloaded in memory, with 
-          partner-level overrides. Example: Age 18–40 + Loan tenure &lt;24 months = 0.8% rate.
+          partner-level overrides.
         </p>
         <p>
-          <strong>Why this matters:</strong> When you&apos;re handling <strong>30K+ RPM</strong>, every 
-          millisecond of pricing computation counts. Grids give us <strong>deterministic, auditable pricing</strong> with 
-          zero runtime risk. The grid versioning also simplified IRDAI compliance — when regulators ask 
-          &quot;what rate did this policy get?&quot;, we can point to the exact grid version.
+          <strong>Why this matters:</strong> At high throughput, every millisecond of pricing computation 
+          counts. Grids give us <strong>deterministic, auditable pricing</strong> with zero runtime risk. 
+          The grid versioning also simplified regulatory compliance — when regulators ask &quot;what rate did 
+          this policy get?&quot;, we can point to the exact grid version.
         </p>
 
         <h4>Decision 3: Double-Entry Immutable Ledger</h4>
         <p>
           <strong>The problem:</strong> This is where most naive insurance systems fail. When I inherited 
-          the financial pipeline, there were ~100 data inconsistencies between the ledger, finance systems, 
-          and compliance reports. Financial closures took 3 days.
+          the financial pipeline, there were data inconsistencies between the ledger, finance systems, and 
+          compliance reports. Financial closures were slow.
         </p>
         <p>
           <strong>The decision:</strong> Every financial movement creates balanced journal entries in an 
@@ -132,9 +131,8 @@ export default function ArchitectureDecisionsPage() {
           and that the alternative (a mutable financial record) was a ticking time bomb.
         </p>
         <p>
-          <strong>The result:</strong> Closure time dropped from 3 days to &lt;6 hours. Reporting accuracy 
-          improved by ~30%. FinAcko became the single source of truth for regulatory and financial reporting 
-          across 30+ partners.
+          <strong>The result:</strong> Closure time reduced significantly. Reporting accuracy improved. The 
+          ledger became the single source of truth for regulatory and financial reporting across all partners.
         </p>
 
         <h4>Decision 4: Failure Handling as a First-Class Concern</h4>
@@ -172,9 +170,8 @@ export default function ArchitectureDecisionsPage() {
         
         <p>
           <strong>The lesson:</strong> Designing failure handling up front is what separates systems that 
-          work at demo scale from systems that work at production scale. We handle <strong>~2,000 policies 
-          per minute</strong> at peak — at that volume, even a 0.01% failure rate without a recovery path 
-          is unacceptable.
+          work at demo scale from systems that work at production scale. At high volume, even a tiny failure 
+          rate without a recovery path is unacceptable.
         </p>
 
         <h4>Decision 5: Reporting Architecture — Separate Reads from Writes</h4>
@@ -185,8 +182,8 @@ export default function ArchitectureDecisionsPage() {
         </p>
         <p>
           <strong>Why:</strong> When regulators and finance teams need reports, they need them accurate and 
-          fast. But generating reports from a database handling 30K+ RPM would degrade the very system 
-          generating the data. This separation gave us <strong>IRDAI-ready reporting with audit trails</strong> without 
+          fast. But generating reports from a high-throughput database would degrade the very system generating 
+          the data. This separation gave us <strong>compliant reporting with audit trails</strong> without 
           sacrificing platform performance.
         </p>
 
@@ -202,25 +199,24 @@ export default function ArchitectureDecisionsPage() {
 
         <h3>Platform Results</h3>
         <ul>
-          <li><strong>30K+ RPM</strong> at peak with zero-downtime migrations</li>
-          <li><strong>₹400+ Cr annualized GWP</strong> across Embedded and Life portfolios</li>
-          <li><strong>500+ dealers</strong> onboarded through mPOS with real-time settlement</li>
-          <li><strong>100% IRDAI compliance</strong> across 30+ partners with no integration changes</li>
-          <li><strong>Zero regulatory non-compliances</strong> across internal and partner audits</li>
+          <li>High-throughput traffic at peak with zero-downtime migrations</li>
+          <li>Hundreds of dealers onboarded with real-time settlement</li>
+          <li>Full regulatory compliance across all partners</li>
+          <li>Zero regulatory non-compliances across audits</li>
         </ul>
       </section>
 
       <section id="partnership-one">
-        <h2>Partnership-One: Unified Integration Layer</h2>
+        <h2>Unified Partner Integration Layer</h2>
         <p className="text-gray-600 italic">
-          How I eliminated fragmented partner APIs across LOBs and built a platform nobody asked for.
+          How I eliminated fragmented partner APIs across business lines and built a platform nobody asked for.
         </p>
 
         <h3>The Problem I Saw</h3>
         <p>
-          Acko had grown fast. Embedded, Auto, Health — each LOB had its own partner integration logic. 
-          Different authentication mechanisms, different API contracts, different onboarding flows. Every 
-          new partner meant rebuilding integration logic that already existed somewhere else in the org.
+          The company had grown fast. Each business line had its own partner integration logic — different 
+          authentication mechanisms, different API contracts, different onboarding flows. Every new partner 
+          meant rebuilding integration logic that already existed somewhere else in the org.
         </p>
         <p>
           The cost wasn&apos;t just engineering hours. It was <strong>inconsistent partner experience, 
@@ -230,52 +226,51 @@ export default function ArchitectureDecisionsPage() {
 
         <h3>The Architecture Decision</h3>
         <p>
-          I proposed and led <strong>Partnership-One</strong> — a unified partner integration platform 
-          standardizing APIs, authentication, and onboarding across all LOBs.
+          I proposed and led a <strong>unified partner integration platform</strong> standardizing APIs, 
+          authentication, and onboarding across all business lines.
         </p>
         <p>The key design decisions:</p>
         <ul>
           <li><strong>Shared authentication and authorization layer</strong> — one authentication mechanism for all partner interactions, regardless of product line</li>
           <li><strong>Unified policy issuance and claim service standards</strong> — common API contracts with product-specific extensions rather than product-specific APIs</li>
           <li><strong>Reusable SDKs and unified API documentation</strong> — partners integrate once, access all product lines</li>
-          <li><strong>Multi-LOB coordination layer</strong> — routing and orchestration across Auto, Health, and Embedded without coupling</li>
+          <li><strong>Multi-LOB coordination layer</strong> — routing and orchestration across business lines without coupling</li>
         </ul>
 
         <h3>The Organizational Challenge</h3>
         <p>
-          The technical design was the easy part. The hard part was <strong>getting three independent teams 
-          to agree on shared standards.</strong> The Auto team had their own integration patterns. The Health 
-          team had theirs.
+          The technical design was the easy part. The hard part was <strong>getting multiple independent teams 
+          to agree on shared standards.</strong> Each team had their own integration patterns.
         </p>
         <p>
           I chose to lead by influence rather than authority. I didn&apos;t have organizational control over 
-          the other teams. So I built the platform within Embedded first, proved the value, and let adoption 
+          the other teams. So I built the platform within my team first, proved the value, and let adoption 
           happen through results:
         </p>
         <ul>
-          <li>Started with my own team (Embedded) as the proving ground</li>
+          <li>Started with my own team as the proving ground</li>
           <li>Demonstrated measurable improvements in integration speed</li>
           <li>Made the alternative — continuing with fragmented APIs — obviously worse</li>
         </ul>
 
         <h3>Results</h3>
         <ul>
-          <li>Engineering efficiency improved by <strong>~40%</strong> by eliminating redundant integration logic</li>
-          <li>New partner integration timelines reduced by <strong>~50%</strong></li>
-          <li>Directly enabled rapid launches: <strong>Cyber Insurance</strong> (~₹20–30 Cr GWP), <strong>LAP</strong> (~₹30 Cr GWP), and <strong>HDB All-in-One</strong> (~₹200 Cr GWP) — all built on Partnership-One</li>
+          <li>Engineering efficiency improved significantly by eliminating redundant integration logic</li>
+          <li>New partner integration timelines reduced substantially</li>
+          <li>Directly enabled rapid launches of multiple new product lines</li>
         </ul>
       </section>
 
       <section id="ackcelerator">
-        <h2>Ackcelerator: Partner Onboarding Framework</h2>
+        <h2>Partner Onboarding Framework</h2>
         <p className="text-gray-600 italic">
-          How I turned a 3–4 day manual process into a 2-hour self-service flow.
+          How I turned a multi-day manual process into a self-service flow.
         </p>
 
         <h3>The Problem</h3>
         <p>
-          Every new partner onboarding required <strong>3–4 days of engineering time</strong> — credential 
-          setup, configuration, validation, QA checks, deployment approvals. With 30+ active partners and a 
+          Every new partner onboarding required <strong>multiple days of engineering time</strong> — credential 
+          setup, configuration, validation, QA checks, deployment approvals. With many active partners and a 
           growing pipeline, the engineering team was becoming a bottleneck to business growth.
         </p>
 
@@ -284,8 +279,8 @@ export default function ArchitectureDecisionsPage() {
         <ul>
           <li><strong>Self-serve APIs and UI workflows</strong> for configuration and credential management</li>
           <li><strong>Automated validation and QA checks</strong> — no engineering review needed for standard onboarding</li>
-          <li><strong>Jira automation integration</strong> for access and deployment approvals</li>
-          <li><strong>Built on top of Partnership-One</strong> — leveraging the unified API layer for instant partner connectivity</li>
+          <li><strong>Workflow automation integration</strong> for access and deployment approvals</li>
+          <li><strong>Built on top of the unified API layer</strong> for instant partner connectivity</li>
         </ul>
 
         <h3>The Tradeoff</h3>
@@ -293,53 +288,51 @@ export default function ArchitectureDecisionsPage() {
           The pushback was real: <em>&quot;We only onboard a few partners a month. Why build a platform for that?&quot;</em>
         </p>
         <p>
-          The bet wasn&apos;t about current volume. It was about where the business was heading. Ackcelerator 
-          was an <strong>investment in organizational scalability</strong> — and it paid off when we needed 
-          to rapidly onboard partners for Cyber, LAP, and HDB launches.
+          The bet wasn&apos;t about current volume. It was about where the business was heading. This was an{' '}
+          <strong>investment in organizational scalability</strong> — and it paid off when we needed to 
+          rapidly onboard partners for new product launches.
         </p>
 
         <h3>Results</h3>
         <ul>
-          <li>Onboarding time: <strong>3–4 days → ~2 hours</strong> (98% reduction)</li>
-          <li><strong>~20 partners</strong> onboarded with near-zero engineering involvement</li>
-          <li>Internal throughput improved by <strong>~35%</strong></li>
-          <li>Framework reused across all LOBs for partner setup</li>
+          <li>Onboarding time reduced from days to hours</li>
+          <li>Many partners onboarded with near-zero engineering involvement</li>
+          <li>Internal throughput improved significantly</li>
+          <li>Framework reused across all business lines for partner setup</li>
         </ul>
       </section>
 
       <section id="credit-life">
-        <h2>Credit Life &amp; Combi: Building New Business Lines</h2>
+        <h2>New Business Line: Life Insurance</h2>
         <p className="text-gray-600 italic">
-          Architecture decisions behind launching Life Insurance and India&apos;s first hybrid GI + LI product.
+          Architecture decisions behind launching a new insurance vertical and a hybrid product.
         </p>
 
         <h3>The Problem</h3>
         <p>
-          Acko was a General Insurance company entering Life Insurance — a completely different regulatory 
-          domain, actuarial model, and compliance framework. And after establishing Credit Life, the challenge 
-          deepened: could we combine GI and LI into a <strong>single hybrid product</strong> that no one in 
-          India had built before?
+          The company was a General Insurance company entering Life Insurance — a completely different regulatory 
+          domain, actuarial model, and compliance framework. And after establishing the initial product, the 
+          challenge deepened: could we combine GI and LI into a <strong>single hybrid product</strong>?
         </p>
 
         <h3>Key Architecture Decisions</h3>
         <p>
           <strong>Decision 1: Build for configurability, not speed.</strong> The team wanted to hardcode 
-          assumptions to ship Credit Life faster. I pushed for building issuance, endorsement, and claims 
-          systems that could extend to future products. This slowed the initial launch — but when Credit Life 
-          Combi came, we shipped it faster <em>because</em> the foundations were right.
+          assumptions to ship faster. I pushed for building issuance, endorsement, and claims systems that 
+          could extend to future products. This slowed the initial launch — but subsequent products shipped 
+          faster <em>because</em> the foundations were right.
         </p>
         <p>
-          <strong>Decision 2: Cross-entity policy ownership model.</strong> For the Combi product, we designed 
+          <strong>Decision 2: Cross-entity policy ownership model.</strong> For the hybrid product, we designed 
           a flexible ownership model allowing either LOB (GI or LI) to lead issuance while maintaining 
           independent claims control. This required <strong>dual-regulatory orchestration</strong> — premium 
-          apportioning rules that satisfied both IRDAI frameworks simultaneously.
+          apportioning rules that satisfied both regulatory frameworks simultaneously.
         </p>
         <p>
-          <strong>Decision 3: IRDAI compliance architecture.</strong> When new IRDAI guidelines in 2025 
-          required separating covers with different durations under distinct master policies, we designed a{' '}
-          <strong>Shallow Product &amp; Shallow Policy framework</strong> — issuing multiple policies linked 
-          under a virtual &quot;shallow&quot; policy while keeping partner integration unchanged. Zero partner-side 
-          API changes across 30+ active partners.
+          <strong>Decision 3: Compliance architecture.</strong> When new regulatory guidelines required 
+          separating covers with different durations under distinct master policies, we designed a{' '}
+          <strong>flexible policy framework</strong> — issuing multiple policies linked under a virtual 
+          &quot;shallow&quot; policy while keeping partner integration unchanged. Zero partner-side API changes.
         </p>
 
         <h3>The Organizational Lesson</h3>
@@ -352,24 +345,24 @@ export default function ArchitectureDecisionsPage() {
 
         <h3>Results</h3>
         <ul>
-          <li>Credit Life: <strong>~₹15–20 Cr annual GWP</strong> with zero regulatory non-compliances</li>
-          <li>Credit Life Combi: <strong>India&apos;s first hybrid GI + LI product</strong> — projected <strong>~₹50–60 Cr GWP</strong></li>
-          <li>Core systems reused in HDB All-in-One (<strong>~₹200 Cr</strong> contract)</li>
+          <li>Successfully launched new Life Insurance vertical with zero regulatory non-compliances</li>
+          <li>Delivered a first-of-its-kind hybrid GI + LI product</li>
+          <li>Core systems reused for subsequent product launches</li>
           <li>Scalable compliance architecture for future regulatory updates</li>
         </ul>
       </section>
 
       <section id="payments-checkout">
-        <h2>Payments &amp; Checkout Platform (Snapdeal)</h2>
+        <h2>Payments &amp; Checkout Platform (E-commerce)</h2>
         <p className="text-gray-600 italic">
-          Architecture decisions for systems handling 25K+ RPM during high-traffic e-commerce events.
+          Architecture decisions for systems handling high-throughput traffic during flash sales.
         </p>
 
         <h3>The Context</h3>
         <p>
-          At Snapdeal, I led checkout, payments, and order management — platforms that <strong>could not go 
-          down</strong> during flash sales and high-traffic events. This was where I learned to think about 
-          scale, reliability, and the operational reality of mission-critical systems.
+          At a major e-commerce company, I led checkout, payments, and order management — platforms that{' '}
+          <strong>could not go down</strong> during flash sales and high-traffic events. This was where I 
+          learned to think about scale, reliability, and the operational reality of mission-critical systems.
         </p>
 
         <h3>Key Architecture Decisions</h3>
@@ -386,7 +379,7 @@ export default function ArchitectureDecisionsPage() {
         </p>
         <p>
           <strong>The tradeoff:</strong> Managing an internal float wallet introduced financial reconciliation 
-          complexity. But instant refunds — versus 5–7 day bank reversals — was a customer experience decision 
+          complexity. But instant refunds — versus multi-day bank reversals — was a customer experience decision 
           that justified the engineering investment.
         </p>
 
@@ -401,7 +394,7 @@ export default function ArchitectureDecisionsPage() {
           <li>Configurable routing rules (cost optimization, success rate)</li>
           <li>Health monitoring with circuit breakers</li>
         </ul>
-        <p><strong>The result:</strong> 99.9%+ payment success rate through intelligent multi-provider routing.</p>
+        <p><strong>The result:</strong> Very high payment success rate through intelligent multi-provider routing.</p>
 
         <h4>Decision 3: Flash Sale Concurrency Patterns</h4>
         <p>
@@ -415,7 +408,7 @@ export default function ArchitectureDecisionsPage() {
           <li><strong>Queue-based checkout</strong> during extreme traffic spikes</li>
           <li><strong>Inventory holds with timeout</strong> — reserve stock during checkout, release on failure</li>
         </ul>
-        <p><strong>The result:</strong> Zero inventory oversells during flash sales. 25K+ RPM sustained during sale events.</p>
+        <p><strong>The result:</strong> Zero inventory oversells during flash sales. High throughput sustained during sale events.</p>
 
         <h4>Decision 4: HSM-Based Key Management</h4>
         <p>
@@ -433,16 +426,16 @@ export default function ArchitectureDecisionsPage() {
       </section>
 
       <section id="sureos-migration">
-        <h2>SureOS Migration: Core Platform Modernization</h2>
+        <h2>Core Platform Modernization</h2>
         <p className="text-gray-600 italic">
           Zero-downtime migration of high-throughput systems to a unified core platform.
         </p>
 
         <h3>The Problem</h3>
         <p>
-          Embedded and Electronics products ran on legacy stacks with frequent scalability issues. The 
-          migration to SureOS was essential for platform unification and future product reuse — but it 
-          involved migrating systems handling <strong>~2,000 policies per minute</strong> at peak.
+          Multiple products ran on legacy stacks with frequent scalability issues. The migration to a modern 
+          platform was essential for unification and future product reuse — but it involved migrating systems 
+          handling high-throughput traffic at peak.
         </p>
 
         <h3>The Architecture Approach</h3>
@@ -456,18 +449,17 @@ export default function ArchitectureDecisionsPage() {
         <h3>The Leadership Challenge</h3>
         <p>
           The hardest part wasn&apos;t the technical migration — it was <strong>managing organizational 
-          risk.</strong> A failed migration at 2,000 policies/min would impact real customers, real partners, 
-          and real revenue. I had to balance the team&apos;s confidence with appropriate caution, ensure 
-          fallback plans were tested (not just documented), and maintain stakeholder trust throughout a 
-          multi-phase rollout.
+          risk.</strong> A failed migration at high volume would impact real customers, real partners, and 
+          real revenue. I had to balance the team&apos;s confidence with appropriate caution, ensure fallback 
+          plans were tested (not just documented), and maintain stakeholder trust throughout a multi-phase rollout.
         </p>
 
         <h3>Results</h3>
         <ul>
-          <li><strong>Zero downtime</strong> during migration — including the Rapido passenger plan (60% of total issuance traffic)</li>
-          <li>Uptime improved by <strong>~25%</strong>, infra costs reduced by <strong>~15%</strong></li>
-          <li>Unified platform across Embedded LOBs, enabling faster releases</li>
-          <li>Added credit product readiness, enabling Credit Life and LAP issuance on SureOS</li>
+          <li><strong>Zero downtime</strong> during migration — including the highest-traffic partner</li>
+          <li>Uptime and infrastructure efficiency improved significantly</li>
+          <li>Unified platform across all business lines, enabling faster releases</li>
+          <li>Platform ready for new product lines</li>
         </ul>
       </section>
 
@@ -485,9 +477,9 @@ export default function ArchitectureDecisionsPage() {
               shortcuts become liabilities.
             </li>
             <li>
-              <strong>Build the platform before you need it</strong> — Partnership-One, Ackcelerator, and 
-              the configurable product engine all required upfront investment that wasn&apos;t tied to immediate 
-              features. Every one of them paid for itself multiple times over.
+              <strong>Build the platform before you need it</strong> — The unified integration layer, 
+              onboarding framework, and configurable product engine all required upfront investment that 
+              wasn&apos;t tied to immediate features. Every one of them paid for itself multiple times over.
             </li>
             <li>
               <strong>The organizational decision is harder than the technical one</strong> — Choosing the 

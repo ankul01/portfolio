@@ -9,7 +9,7 @@ export default function AboutPage() {
       <p>
         <strong>Engineering leader who builds high-performing teams and scalable platforms.</strong>{' '}
         14+ years shipping mission-critical systems in fintech and e-commerce — from zero-to-one 
-        products to platforms handling 30K+ RPM under strict regulatory constraints.
+        products to platforms handling high-throughput traffic under strict regulatory constraints.
       </p>
       
       <p>
@@ -39,22 +39,22 @@ export default function AboutPage() {
         <h2>Experience</h2>
 
         <h3>Acko General Insurance — Senior Engineering Manager</h3>
-        <p className="text-sm text-gray-500 italic">2019 – Present</p>
+        <p className="text-sm text-gray-500 italic">2023 – Present</p>
         
         <p>
           At Acko, I lead a multi-layered engineering organization of <strong>15+ engineers</strong> across 
-          embedded insurance, lending, and partner integrations. We own mission-critical platforms handling{' '}
-          <strong>30K+ requests per minute</strong> under strict regulatory constraints — the kind of systems 
+          embedded insurance, lending, and partner integrations. We own mission-critical platforms handling 
+          high-throughput traffic under strict regulatory constraints — the kind of systems 
           where correctness isn&apos;t optional.
         </p>
 
         <p><strong>What I built:</strong></p>
         <ul>
-          <li>Introduced <strong>ML-based fraud detection</strong> that improved accuracy by ~40% while reducing manual reviews</li>
+          <li>Integrated <strong>AI-based fraud detection</strong> that improved detection accuracy while reducing manual reviews</li>
           <li>Established a new <strong>Life Insurance line of business</strong> from scratch and delivered an industry-first hybrid insurance product</li>
-          <li>Designed a <strong>reusable integration framework</strong> that cut partner onboarding from ~1 week to ~2 hours</li>
-          <li>Built a <strong>multi-brand dealer POS platform</strong> with real-time settlement — onboarded 500+ dealers, enabling ~₹100 Cr in annualized throughput</li>
-          <li>Led a <strong>zero-downtime migration</strong> of high-throughput issuance and claims systems (~2,000 policies/min) to a unified core platform, improving uptime by ~25% and scalability by ~30%</li>
+          <li>Designed a <strong>reusable integration framework</strong> that cut partner onboarding time significantly</li>
+          <li>Built a <strong>multi-brand dealer POS platform</strong> with real-time settlement — onboarded hundreds of dealers</li>
+          <li>Led a <strong>zero-downtime migration</strong> of high-throughput issuance and claims systems to a unified core platform, improving uptime and scalability</li>
         </ul>
 
         <p><strong>How I led:</strong></p>
@@ -66,10 +66,10 @@ export default function AboutPage() {
         </ul>
 
         <h3>Snapdeal — Technical Lead</h3>
-        <p className="text-sm text-gray-500 italic">2015 – 2019 · 4 years</p>
+        <p className="text-sm text-gray-500 italic">2018 – 2022 · 4 years</p>
         
         <p>
-          Led checkout, payments, and order management — platforms handling <strong>25K+ RPM</strong> during 
+          Led checkout, payments, and order management — platforms handling high-throughput traffic during 
           high-traffic e-commerce events. This is where I learned to think about scale, reliability, and the 
           operational reality of systems that can&apos;t go down.
         </p>
@@ -85,11 +85,11 @@ export default function AboutPage() {
         <ul>
           <li>Owned end-to-end delivery for some of the most critical checkout flows during peak sale events</li>
           <li>Mentored junior engineers and helped several grow into senior and lead roles</li>
-          <li>Drove cross-team collaboration to ensure payment system reliability during high-traffic events like Big Billion Days</li>
+          <li>Drove cross-team collaboration to ensure payment system reliability during high-traffic events</li>
         </ul>
 
         <h3>Nagarro — Software Developer → Technical Lead</h3>
-        <p className="text-sm text-gray-500 italic">2009 – 2015 · 6 years</p>
+        <p className="text-sm text-gray-500 italic">2011 – 2017 · 6 years</p>
         
         <p>
           Built B2B e-commerce platforms, booking systems, and data pipelines across healthcare, gaming, 
@@ -115,7 +115,7 @@ export default function AboutPage() {
           <li><strong>Hiring &amp; Team Building</strong>: Scaled engineering teams from small squads to 15+ person organizations, hiring across multiple levels</li>
           <li><strong>Mentorship</strong>: Coached engineers from junior to senior and lead roles, with a focus on ownership and technical depth</li>
           <li><strong>Cross-functional Collaboration</strong>: Worked closely with product, design, compliance, and business stakeholders to deliver complex products in regulated environments</li>
-          <li><strong>Zero-to-One Delivery</strong>: Launched entirely new business lines (Life Insurance) and platforms (dealer POS) from concept to production</li>
+          <li><strong>Zero-to-One Delivery</strong>: Launched entirely new business lines and platforms from concept to production</li>
           <li><strong>Operational Excellence</strong>: Established architecture review practices, on-call processes, and delivery rituals that improved team predictability and reduced firefighting</li>
         </ul>
       </section>
@@ -138,7 +138,7 @@ export default function AboutPage() {
 
         <h3>Invest in the Craft</h3>
         <p>
-          I&apos;ve been exploring AI-assisted development workflows, and we&apos;ve seen a ~25% reduction in 
+          I&apos;ve been exploring AI-assisted development workflows, and we&apos;ve seen measurable reduction in 
           development cycle time. The tools are changing fast, and staying curious about them matters. 
           I encourage my teams to experiment and adopt what works.
         </p>
@@ -176,7 +176,7 @@ export default function AboutPage() {
             </tr>
             <tr>
               <td className="border border-gray-200 px-4 py-2">Emerging Areas</td>
-              <td className="border border-gray-200 px-4 py-2">ML-based Fraud Detection, AI-Assisted Development Workflows</td>
+              <td className="border border-gray-200 px-4 py-2">AI-based Fraud Detection, AI-Assisted Development Workflows</td>
             </tr>
           </tbody>
         </table>

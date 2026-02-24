@@ -25,16 +25,17 @@ export default function LeadershipPrinciplesPage() {
         
         <p>
           At Acko, I remain hands-on across architecture reviews, critical backend components, and system 
-          design decisions. When we migrated our highest-traffic partner — Rapido, processing{' '}
-          <strong>~2,000 policies per minute</strong> — to a new core platform, I wasn&apos;t watching from the 
-          sidelines. I was in the architecture reviews, challenging assumptions, and reviewing rollback plans.
+          design decisions. When we migrated our highest-traffic partner to a new core platform, I wasn&apos;t 
+          watching from the sidelines. I was in the architecture reviews, challenging assumptions, and 
+          reviewing rollback plans.
         </p>
         
         <p>
-          When we built <strong>FraudShield</strong>, I partnered directly with the Data Science team to 
-          integrate ML-based anomaly detection models. Not because my team couldn&apos;t handle it, but because 
-          understanding <em>how</em> the fraud detection layer worked was essential to making good decisions 
-          about <em>where</em> it fit in our platform architecture.
+          When we integrated <strong>AI-based fraud detection</strong>, I worked closely with the team to 
+          design it as a <strong>pluggable platform</strong> — architected so we could swap providers or 
+          integrate multiple systems in the future. The integration took time to mature; we ran weekly 
+          reviews to track progress and iterate. Understanding <em>how</em> the fraud detection layer worked 
+          was essential to making good decisions about <em>where</em> it fit in our platform architecture.
         </p>
         
         <p>
@@ -61,13 +62,12 @@ export default function LeadershipPrinciplesPage() {
         
         <ul>
           <li>
-            <strong>Implemented a Jira automation framework</strong> with 10+ rules that improved SDLC 
-            compliance by ~25%, enforced code review discipline, and standardized sprint hygiene across 
-            all Embedded teams
+            <strong>Implemented a Jira automation framework</strong> with multiple rules that improved SDLC 
+            compliance, enforced code review discipline, and standardized sprint hygiene across teams
           </li>
           <li>
-            <strong>Established an incident governance framework</strong> that cut escalation resolution 
-            time by 25% — not through faster firefighting, but through better prevention
+            <strong>Established an incident governance framework</strong> that reduced escalation resolution 
+            time — not through faster firefighting, but through better prevention
           </li>
           <li>
             <strong>Promoted data-driven retrospectives</strong> with actionable tracking, so the same 
@@ -76,10 +76,10 @@ export default function LeadershipPrinciplesPage() {
         </ul>
         
         <p>
-          When we delivered the <strong>HDB All-in-One</strong> launch — a ₹200 Cr multi-category product 
-          in under 3 weeks — it wasn&apos;t because the team worked around the clock. It was because our 
-          delivery infrastructure, partner onboarding frameworks, and engineering practices were already 
-          in place. The sprint felt fast, but it was <strong>predictable</strong>.
+          When we delivered a <strong>major multi-category product launch</strong> in under 3 weeks, it 
+          wasn&apos;t because the team worked around the clock. It was because our delivery infrastructure, 
+          partner onboarding frameworks, and engineering practices were already in place. The sprint felt 
+          fast, but it was <strong>predictable</strong>.
         </p>
         
         <p>
@@ -100,23 +100,23 @@ export default function LeadershipPrinciplesPage() {
         
         <p>
           I&apos;ve been exploring <strong>AI-assisted development workflows</strong> with my teams, and 
-          we&apos;ve seen a <strong>~25% reduction in development cycle time</strong>. But the number isn&apos;t 
-          the point. The point is creating a culture where engineers are encouraged to{' '}
+          we&apos;ve seen measurable reduction in development cycle time. But the number isn&apos;t the point. 
+          The point is creating a culture where engineers are encouraged to{' '}
           <strong>experiment with new tools and approaches</strong> rather than defaulting to what&apos;s familiar.
         </p>
         
         <p>
-          When we built <strong>FraudShield</strong>, we brought ML-based detection into a team that had 
-          never worked with machine learning models before. We partnered with Data Science, learned new 
-          patterns, and built something that improved fraud detection accuracy by <strong>~40%</strong> while 
-          reducing manual reviews. The team grew technically because we chose to lean into unfamiliar 
-          territory instead of staying in our comfort zone.
+          When we integrated <strong>AI-based fraud detection</strong>, we brought a new capability into a 
+          team that had never worked with such systems before. We learned new patterns, iterated through 
+          weekly reviews, and built something that significantly improved detection accuracy while reducing 
+          manual reviews. The team grew technically because we chose to lean into unfamiliar territory 
+          instead of staying in our comfort zone.
         </p>
         
         <p>
-          I also standardized <strong>SDLC process documentation</strong> across all Embedded LOBs and 
-          established automated deployment pipelines — not because process is glamorous, but because craft 
-          includes the discipline of how you ship, not just what you ship.
+          I also standardized <strong>SDLC process documentation</strong> across teams and established 
+          automated deployment pipelines — not because process is glamorous, but because craft includes 
+          the discipline of how you ship, not just what you ship.
         </p>
         
         <p>
@@ -134,38 +134,37 @@ export default function LeadershipPrinciplesPage() {
         </p>
         
         <p>
-          Over the past three years at Acko, I&apos;ve scaled engineering teams from small squads to a{' '}
-          <strong>15+ person organization</strong> spanning multiple LOBs. But scaling isn&apos;t just about 
-          headcount. It&apos;s about building the conditions where people grow into the best version of their 
-          engineering selves.
+          At Acko, I&apos;ve scaled engineering teams from small squads to a{' '}
+          <strong>15+ person organization</strong> spanning multiple business lines. But scaling isn&apos;t just 
+          about headcount. It&apos;s about building the conditions where people grow into the best version of 
+          their engineering selves.
         </p>
         
         <p>Here&apos;s what that looks like in practice:</p>
         
         <ul>
           <li>
-            <strong>Mentored 2 engineering manager candidates and 5 senior engineers</strong> for promotion 
+            <strong>Mentored engineering manager candidates and senior engineers</strong> for promotion 
             readiness — investing in their growth trajectories, not just their current output
           </li>
           <li>
-            <strong>Rebuilt the Partner Automation and SWAT teams</strong> for higher delivery accountability — 
-            sometimes the right team design decision is restructuring, not just hiring
+            <strong>Restructured teams</strong> for higher delivery accountability — sometimes the right 
+            team design decision is restructuring, not just hiring
           </li>
           <li>
-            <strong>Ran a Claims Hackathon</strong> to encourage experimentation and process automation — 
-            giving engineers space to explore ideas outside sprint commitments
+            <strong>Ran hackathons</strong> to encourage experimentation and process automation — giving 
+            engineers space to explore ideas outside sprint commitments
           </li>
           <li>
-            <strong>Active in EM and SDE3 hiring panels</strong> and reviewer for cross-team design proposals — 
+            <strong>Active in hiring panels</strong> and reviewer for cross-team design proposals — 
             extending influence beyond my direct org
           </li>
         </ul>
         
         <p>
           When you invest in the right people and give them the right context, the results compound over time. 
-          The HDB All-in-One launch, the Credit Life Combi product, the SureOS migration — none of these were 
-          the work of any one person. They were the output of a team that had been deliberately built to 
-          handle exactly this kind of complexity.
+          Major product launches, platform migrations — none of these were the work of any one person. They 
+          were the output of a team that had been deliberately built to handle exactly this kind of complexity.
         </p>
         
         <p>
@@ -187,20 +186,20 @@ export default function LeadershipPrinciplesPage() {
         
         <ul>
           <li>
-            <strong>Full accountability for 6+ major launches</strong> (Credit Life, Combi, HDB, mPOS, 
-            Cyber, LAP) — from architecture to production to business metrics
+            <strong>Full accountability for multiple major launches</strong> — from architecture to 
+            production to business metrics
           </li>
           <li>
-            <strong>Owning the FinAcko stabilization</strong> — resolving ~100 historical data issues and 
+            <strong>Owning system stabilization efforts</strong> — resolving historical data issues and 
             achieving reporting accuracy alignment with Finance and Compliance teams
           </li>
           <li>
-            <strong>Handling partner escalations independently</strong> — Oppo activations, Muthoot 
-            integrations, Cred issues — with proactive root cause analysis and closure
+            <strong>Handling partner escalations independently</strong> — with proactive root cause 
+            analysis and closure
           </li>
           <li>
-            <strong>Shifting the Embedded engineering culture</strong> from dependency-based to 
-            accountability-driven delivery
+            <strong>Shifting the engineering culture</strong> from dependency-based to accountability-driven 
+            delivery
           </li>
         </ul>
         
