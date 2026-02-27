@@ -38,8 +38,11 @@ export default function AboutPage() {
       <section id="experience">
         <h2>Experience</h2>
 
-        <h3>Acko General Insurance — Senior Engineering Manager</h3>
-        <p className="text-sm text-gray-500 italic">2023 – Present</p>
+        <h3>Acko General Insurance</h3>
+        <p className="text-sm text-gray-500 italic">
+          <strong>Senior Engineering Manager</strong> | Oct 2025 – Present<br />
+          <strong>Engineering Manager</strong> | Dec 2022 – Sep 2025
+        </p>
         
         <p>
           At Acko, I lead a multi-layered engineering organization of <strong>15+ engineers</strong> across 
@@ -65,13 +68,16 @@ export default function AboutPage() {
           <li>Stayed hands-on throughout — participating in design reviews, contributing to critical backend components, and staying close to the technical decisions that matter</li>
         </ul>
 
-        <h3>Snapdeal — Technical Lead</h3>
-        <p className="text-sm text-gray-500 italic">2018 – 2022 · 4 years</p>
+        <h3>Snapdeal</h3>
+        <p className="text-sm text-gray-500 italic">
+          <strong>Lead Software Engineer → Engineering Manager</strong> | Jan 2018 – Nov 2022
+        </p>
         
         <p>
-          Led checkout, payments, and order management — platforms handling high-throughput traffic during 
-          high-traffic e-commerce events. This is where I learned to think about scale, reliability, and the 
-          operational reality of systems that can&apos;t go down.
+          Joined as Lead Software Engineer and was promoted to Engineering Manager. Led checkout, payments, 
+          and order management — platforms handling high-throughput traffic during high-traffic e-commerce events. 
+          This is where I learned to think about scale, reliability, and the operational reality of systems 
+          that can&apos;t go down.
         </p>
 
         <p><strong>What I built:</strong></p>
@@ -88,12 +94,15 @@ export default function AboutPage() {
           <li>Drove cross-team collaboration to ensure payment system reliability during high-traffic events</li>
         </ul>
 
-        <h3>Nagarro — Software Developer → Technical Lead</h3>
-        <p className="text-sm text-gray-500 italic">2011 – 2017 · 6 years</p>
+        <h3>Nagarro</h3>
+        <p className="text-sm text-gray-500 italic">
+          <strong>Software Developer → Senior Developer → Technical Lead</strong> | 2011 – 2017
+        </p>
         
         <p>
           Built B2B e-commerce platforms, booking systems, and data pipelines across healthcare, gaming, 
-          and enterprise domains. Progressed from software developer to technical lead.
+          and enterprise domains. Progressed through three levels — from Software Developer to Senior Developer 
+          to Technical Lead — building the foundation for my engineering leadership career.
         </p>
         <ul>
           <li>Translated complex business requirements into technical designs across diverse industries</li>
