@@ -5,20 +5,20 @@ export default function CrossSiteNav() {
     <nav className="bg-gray-50 border-b border-gray-200 text-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex gap-6 items-center">
         <Link
-          href="https://ankul.co.in"
+          href="https://ankul01.github.io/profile/"
           className="text-gray-600 hover:text-gray-900"
         >
-          ← ankul.co.in
+          ← Home
         </Link>
         <span className="text-gray-300">|</span>
         <Link
-          href="https://ankul.co.in"
+          href="https://ankul01.github.io/profile/"
           className="text-gray-600 hover:text-gray-900"
         >
           Home
         </Link>
         <Link
-          href="https://ankul.co.in/engineering-with-intent/"
+          href="https://ankul01.github.io/leadership-learning/"
           className="text-gray-600 hover:text-gray-900"
         >
           Engineering with Intent
