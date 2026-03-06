@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import CrossSiteNav from "@/components/CrossSiteNav";
 import Header from "@/components/Header";
 import GoogleAnalytics from "@/components/GoogleAnalytics";
 
@@ -15,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ankul Choudhry — Engineering Leader",
-  description: "Engineering Leader | Platforms, Distributed Systems & Partner Integrations | Embedded Insurance | Ex-Snapdeal | NIT Trichy",
+  title: "Ankul Choudhry — Portfolio",
+  description: "Senior Engineering Manager. 14+ years building scalable platforms in fintech, insurance, and e-commerce.",
 };
 
 export default function RootLayout({
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white text-gray-900`}
       >
+        <CrossSiteNav />
         <Header />
         {children}
       </body>
