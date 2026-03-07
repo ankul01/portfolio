@@ -8,13 +8,6 @@ export default function CrossSiteNav() {
           href="https://ankul.co.in"
           className="text-gray-600 hover:text-gray-900"
         >
-          ← Home
-        </Link>
-        <span className="text-gray-300">|</span>
-        <Link
-          href="https://ankul.co.in"
-          className="text-gray-600 hover:text-gray-900"
-        >
           Home
         </Link>
         <Link
